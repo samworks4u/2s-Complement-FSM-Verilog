@@ -30,13 +30,18 @@ Getting the logic right is only the first step. Here's why **behavioral and post
 - After synthesis, your FSM is converted to a **gate-level netlist**
 - Simulate this netlist functionally (without timing)
 - Confirm that the **waveform still matches** your RTL simulation
+![image](https://github.com/user-attachments/assets/a5507e8e-74dd-488d-94e8-2ef4308c8ca0)
 
 ### ⏱️ 3. Post-Synthesis Timing Simulation
 - Now simulate using the netlist **with timing delays**
 - This shows how your design behaves with **actual gate delays**
 - Final check to ensure waveform correctness holds up in real conditions
+- also due to considertion of actual delays of components , outcode is generated with a delay of 6.425 with respeect to the clock
+![image](https://github.com/user-attachments/assets/7b44eee2-0090-4fe8-b8f6-1afb7caa41ed)
 
 ---
 
-✅ **Key Point**: Your waveform **must match across all stages** — behavioral, post-synthesis functional, and post-synthesis timing simulations. That’s how you ensure your design is robust and hardware-ready.
+✅ **Key Point**: Your waveform **must match across all stages** — behavioral, post-synthesis functional, and post-synthesis timing simulations (here with delays). That’s how you ensure your design is robust and hardware-ready.
+![image](https://github.com/user-attachments/assets/b62bbba5-8b87-42af-aca2-a3ba3792d6c9)
+
 
